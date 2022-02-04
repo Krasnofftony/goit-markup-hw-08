@@ -1,0 +1,27 @@
+.service{
+
+position: relative;
+
+    &__title{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        min-height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        overflow: auto;
+        color: $elements-white;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image{
+            display: block;
+            max-width: 100%;
+            height: auto;
+          }
+}

@@ -1,0 +1,94 @@
+.footer{
+    background: $background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__social-media{
+        margin-left: 70px;
+        margin-top: 12px;
+    }
+
+    &__call-to-action{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $elements-white;
+            margin-bottom: 20px;
+            display: block;
+    }
+
+    &__address{
+        margin-top: 20px;
+    }
+
+    &__form{
+        margin-top: 9px;
+        margin-left: auto;
+    }
+
+    &__subscription{
+        display: flex; 
+    }
+
+    &__input{
+        display: inline-block;
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+      
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        outline: none;
+    }
+}
+
+
+
+.address{
+    list-style: none;
+
+    &__line{
+        margin-bottom: 9px;
+    }
+
+    &__line:last-child{
+        margin-bottom: 0;
+    }
+
+    &__text{
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__text:hover,
+    &__text:focus{
+        color: $brand-color;
+    }
+
+    &__text--alternative{
+        color: $elements-white;
+    }
+}

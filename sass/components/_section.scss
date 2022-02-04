@@ -1,0 +1,54 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&--alternative-background{
+    background: $background-extra;
+}    
+
+&--alternative-padding{
+    padding-bottom: 0;
+}
+
+&__title {
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title;
+    margin-bottom: 50px;
+}
+
+&__title--hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+&__filter-list{
+    margin-bottom: 34px;
+}
+  }
+
+.section-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+
+}
+
+.section-list__item{
+margin-right: 30px;
+
+&:last-child{
+    margin-right: 0;
+}
+
+}
