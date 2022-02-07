@@ -1,6 +1,17 @@
 .advantage{
 
-        max-width: 270px;
+        @media screen and (min-width:480px){
+            width: 450px;
+        }
+
+        @media screen and (min-width:768px){
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px){
+            width: 270px;
+        }
+            
 
     &__title{
         margin-bottom: 10px;
@@ -10,6 +21,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $title;
+        text-align: center;
+
+        @media screen and (min-width:768px){
+            text-align: left;
+        }
     }
 
     &__icon{
@@ -22,5 +38,4 @@
         background-color: $background-extra;
         border-radius: 4px;
     }
-
 }

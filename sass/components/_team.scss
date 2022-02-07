@@ -1,7 +1,7 @@
 .team-list{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
   list-style: none;
 
   &__card{
@@ -20,7 +20,20 @@
 
 
 .team-card {
-    max-width: 270px;
+
+  @media screen and (min-width:480px){
+    width: 450px;
+}
+
+@media screen and (min-width:768px){
+    width: 354px;
+}
+
+@media screen and (min-width:1200px){
+    width: 270px;
+}
+
+    // max-width: 270px;
     background: $elements-white;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
