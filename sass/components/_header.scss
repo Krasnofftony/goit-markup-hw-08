@@ -6,13 +6,16 @@
       display: flex;
       position: relative;
 
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: center;
     }
 
     &__navigation{
+
+      margin-left: 88px;
+
+      @media screen and(min-width:1200px) {
         margin-left: 93px;
+      }
+
     
 
     }
@@ -118,23 +121,40 @@
  
 .contacts{
   list-style: none;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (min-width:1200px) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
+
   
       &__item{
-        margin-right: 30px;
+        display: none;
+
+        @media screen and(min-width:768px) {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        @media screen and (min-width:1200px) {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
       }
 
       &__item:last-child{
-        margin-right: 0px;}
+        margin-bottom: 0;
+        margin-right: 0;}
 
       &__link{
-        padding-top: 32px;
-        padding-bottom: 32px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         color: $text;
         font-weight: 500;
         line-height: 1.14;

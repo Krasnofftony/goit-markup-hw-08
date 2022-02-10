@@ -15,27 +15,63 @@
 
 <body>
 
-    <!-- <header class="header">
-        <div class="container">
-                <div class="header__content">
-                        <nav class="navigation">
-                                <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
-                                <ul class="navigation header__navigation">
-                                        <li class="navigation__item"><a class="navigation__link" href="./index.html">Студия</a></li>
-                                        <li class="navigation__item navigation__item--active"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
-                                        <li class="navigation__item"><a class="navigation__link" href="./contacts">Контакты</a></li>
-                                </ul>
-                        </nav>
-
-                                <ul class="contacts header__contacts">
-                                        <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com"><svg width="16" height="12" class="contacts__icon">
-                                                <use href="./images/icons.svg#icon-email"></use>
-                                        </svg>info@devstudio.com</a></li> 
-                                        <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111"><svg width="10" height="16" class="contacts__icon"><use href="./images/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a> </li>
-                                </ul>
+        <header class="header">
+                <div class="container">
+                        <div class="header__content">
+                                <nav class="navigation">
+                                        <a class="logo header__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
+                                        <ul class="navigation header__navigation">
+                                                <li class="navigation__item"><a class="navigation__link" href="./index.html">Студия</a></li>
+                                                <li class="navigation__item navigation__item--active"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+                                                <li class="navigation__item"><a class="navigation__link" href="./contacts">Контакты</a></li>
+                                        </ul>
+                                </nav>
+        
+                        <ul class="contacts header__contacts">
+                                <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com"><svg width="16" height="12" class="contacts__icon">
+                                        <use href="./images/icons.svg#icon-email"></use>
+                                </svg>info@devstudio.com</a></li> 
+                                <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111"><svg width="10" height="16" class="contacts__icon"><use href="./images/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a> </li>
+                        </ul>
+        
+                                <button class="mobile-button header__mobile-button" type="button" data-menu-open>
+                                        <svg width="40px" height="40px" class="mobile-button__icon" aria-label="Переключатель мобильного меню">
+                                                <use href="./images/icons.svg#menu-mobile"></use>
+                                        </svg>
+                                </button>
+        
+        
+                                <div class="menu-mobile is-hidden" data-menu>
+                                        <button type="button" class="menu-mobile__close-button" data-menu-close>
+                                                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                                                        <use href="./images/icons.svg#menu-close"></use>
+                                                </svg>
+                                        </button>
+                                        <ul class="menu__list">
+                                                <li class="menu__item"><a href="./index.html" class="menu__navigation">Студия</a> </li>
+                                                <li class="menu__item"><a href="./portfolio.html" class="menu__navigation">Портфолио</a></li>
+                                                <li class="menu__item"><a href="./index.html" class="menu__navigation">Контакты</a></li>
+                                        </ul>
+        
+                                        <ul class="menu__list menu-mobile__contacts">
+                                                <li class="menu__item"><a href="+380961111111" class="menu__tel">+38 096 111 11 11</a></li>
+                                                <li class="menu__item"><a href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a></li>
+                                        </ul>
+        
+                                        <ul class="menu-mobile__social-media">
+                                                <li class="social-media__list"><a class="menu__social-media" href="">Instagram</a></li>
+                                                <li class="social-media__list"><a class="menu__social-media" href="">Twitter</a></li>
+                                                <li class="social-media__list"><a class="menu__social-media" href="">Facebook</a></li>
+                                                <li class="social-media__list"><a class="menu__social-media" href="">LinkedIn</a></li>
+                                        </ul>
+        
+                                        </div>
+                                </div>
+                        
+                        </div>
+        
                 </div>
-        </div>
-</header> -->
+        </header>
 
 
 
@@ -120,5 +156,6 @@
                 </div>
         </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

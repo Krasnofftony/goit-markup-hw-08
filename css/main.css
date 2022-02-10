@@ -66,7 +66,13 @@ body.menu--open {
 }
 
 .header__navigation {
-  margin-left: 93px;
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    margin-left: 93px;
+  }
 }
 
 .header__contacts {
@@ -186,36 +192,58 @@ body.menu--open {
 
 .contacts {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__item {
-  margin-right: 30px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .contacts__item:last-child {
-  margin-right: 0px;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
@@ -283,6 +311,7 @@ body.menu--open {
   top: 0%;
   left: 0%;
   padding: 48px 40px 48px 40px;
+  z-index: 1;
 }
 
 .menu-mobile__close-button {
@@ -325,6 +354,8 @@ body.menu--open {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .is-hidden {
