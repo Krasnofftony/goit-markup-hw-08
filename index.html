@@ -130,9 +130,14 @@
                 <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2> 
                 <ul class="section-list">
-                        <li class="section-list__item service"><a href=""><img src="./images/box1.jpg" alt="Создание верстки" width="370" class="service__image"><p class="service__title">Десктопные приложения</p></a></li>
-                        <li class="section-list__item service"><a href=""><img src="./images/box2.jpg" alt="Разработка мобильной версии" width="370" class="service__image"><p class="service__title">Мобильные приложения</p></a></li>
-                        <li class="section-list__item service"><a href=""><img src="./images/box3.jpg" alt="Дизайн макетов" width="370" class="service__image"><p class="service__title">Дизайнерские решения</p></a></li>
+                        <li class="section-list__item service">
+                                <a href="">
+                                        <img src="./images/optimized/service1.jpg" srcset="./images/optimized/service1.jpg 1x, ./images/optimized/service1_2x.jpg 2x" alt="Создание верстки" width="370" class="service__image">
+                                        <p class="service__title">Десктопные приложения</p>
+                                </a>
+                        </li>
+                        <li class="section-list__item service"><a href=""><img src="./images/optimized/service2.jpg" srcset="./images/optimized/service2.jpg 1x, ./images/optimized/service2_2x.jpg 2x" alt="Разработка мобильной версии" width="370" class="service__image"><p class="service__title">Мобильные приложения</p></a></li>
+                        <li class="section-list__item service"><a href=""><img src="./images/optimized/service3.jpg" srcset="./images/optimized/service3.jpg 1x, ./images/optimized/service3_2x.jpg 2x" alt="Дизайн макетов" width="370" class="service__image"><p class="service__title">Дизайнерские решения</p></a></li>
                 </ul>
                 </div>
         </section>
@@ -144,7 +149,19 @@
             <h2 class="section__title">Наша команда</h2>
                 <ul class="section-list">
                         <li class="section-list__item team-card team-card__list">
-                        <img src="./images/img3.jpg" alt="Фото Игорь Демьяненко" width="270" height="260" class="team-card__image">
+                                <picture>
+                                        <source
+                                        srcset="./images/optimized/team1_tel.jpg 1x, ./images/optimized/team1_tel_2x.jpg 2x" media="(max-width:767px)"
+                                        >
+
+                                        <source
+                                        srcset="./images/optimized/team1_desk.jpg 1x, ./images/optimized/team1_desk_2x.jpg 2x" media="(min-width:1200px)"
+                                        >   
+
+                                        <img src="./images/optimized/team1_tablet.jpg" srcset="./images/optimized/team1_tablet.jpg 1x, ./images/optimized/team1_tablet_2x.jpg 2x" alt="Фото Игорь Демьяненко" width="auto" height="auto" class="team-card__image">
+
+                                </picture>
+                        
                         <h3 class="team-card__title">Игорь Демьяненко</h3>
                         <p lang="en" class="team-card__text">Product Designer</p>
                                 <ul class="team-card__social-media">
@@ -156,7 +173,18 @@
                         </li>
 
                         <li class="section-list__item team-card team-card__list">
-                        <img src="./images/img2.jpg" alt="Фото Ольга Репина" width="270" height="260" class="team-card__image">
+                                <picture>
+                                        <source
+                                        srcset="./images/optimized/team2_tel.jpg 1x, ./images/optimized/team2_tel_2x.jpg 2x" media="(max-width:767px)"
+                                        >
+
+                                        <source
+                                        srcset="./images/optimized/team2_desk.jpg 1x, ./images/optimized/team2_desk_2x.jpg 2x" media="(min-width:1200px)"
+                                        >   
+
+                                        <img src="./images/optimized/team2_tablet.jpg" srcset="./images/optimized/team2_tablet.jpg 1x, ./images/optimized/team2_tablet_2x.jpg 2x" alt="Фото Ольга Репина" width="auto" height="auto" class="team-card__image">
+
+                                </picture>        
                         <h3 class="team-card__title">Ольга Репина</h3>
                         <p lang="en" class="team-card__text">Frontend Developer</p>
                                 <ul class="team-card__social-media">
@@ -176,7 +204,18 @@
                         </li>
 
                         <li class="section-list__item team-card team-card__list">
-                        <img src="./images/img1.jpg" alt="Фото Николай Тарасов" width="270" height="260" class="team-card__image">
+                                <picture>
+                                        <source
+                                        srcset="./images/optimized/team3_tel.jpg 1x, ./images/optimized/team3_tel_2x.jpg 2x" media="(max-width:767px)"
+                                        >
+
+                                        <source
+                                        srcset="./images/optimized/team3_desk.jpg 1x, ./images/optimized/team3_desk_2x.jpg 2x" media="(min-width:1200px)"
+                                        >   
+
+                                        <img src="./images/optimized/team3_tablet.jpg" srcset="./images/optimized/team3_tablet.jpg 1x, ./images/optimized/team3_tablet_2x.jpg 2x" alt="Фото Николай Тарасов" width="auto" height="auto" class="team-card__image">
+
+                                </picture>           
                         <h3 class="team-card__title">Николай Тарасов</h3>
                         <p lang="en" class="team-card__text">Marketing</p>
                                 <ul class="team-card__social-media">
@@ -188,7 +227,18 @@
                         </li>
                         
                         <li class="section-list__item team-card team-card__list">
-                        <img src="./images/img.jpg" alt="Фото Михаил Ермаков" width="270" height="260" class="team-card__image">
+                                <picture>
+                                        <source
+                                        srcset="./images/optimized/team4_tel.jpg 1x, ./images/optimized/team4_tel_2x.jpg 2x" media="(max-width:767px)"
+                                        >
+
+                                        <source
+                                        srcset="./images/optimized/team4_desk.jpg 1x, ./images/optimized/team4_desk_2x.jpg 2x" media="(min-width:1200px)"
+                                        >   
+
+                                        <img src="./images/optimized/team4_tablet.jpg" srcset="./images/optimized/team4_tablet.jpg 1x, ./images/optimized/team4_tablet_2x.jpg 2x" alt="Фото Михаил Ермаков" width="auto" height="auto" class="team-card__image">
+
+                                </picture>    
                         <h3 class="team-card__title">Михаил Ермаков</h3>
                         <p lang="en" class="team-card__text">UI Designer</p>
                                 <ul class="team-card__social-media">
@@ -309,7 +359,7 @@
                 </div>
         </div>
 
-<script src="./js/menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 
 </body>

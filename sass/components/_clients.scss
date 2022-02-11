@@ -1,12 +1,21 @@
 .client-list{
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     list-style: none;
     
     &__item{
 
+
         margin: 0 auto 30px auto;
+
+        @media screen and (min-width:450px) and (max-width:479px) {
+
+            margin-right: 30px;
+            margin-left: 30px;
+        }
 
 
         @media screen and (min-width:480px) {

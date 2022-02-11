@@ -33,7 +33,16 @@
         margin-bottom: 30px;
         align-items: center;
         justify-content: center;
-        width: 270px;
+        width: auto;
+
+        @media screen and(min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and(min-width:1200px) {
+            width: 270px;
+        }
+        
         height: 120px;
         background-color: $background-extra;
         border-radius: 4px;

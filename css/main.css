@@ -553,10 +553,22 @@ body.menu--open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: auto;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__icon {
+    width: 270px;
+  }
 }
 
 .service {
@@ -667,9 +679,6 @@ body.menu--open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -858,11 +867,21 @@ body.menu--open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
 }
 
 .client-list__item {
   margin: 0 auto 30px auto;
+}
+
+@media screen and (min-width: 450px) and (max-width: 479px) {
+  .client-list__item {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1225,9 +1244,6 @@ body.menu--open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
