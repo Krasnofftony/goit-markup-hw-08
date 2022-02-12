@@ -8,6 +8,10 @@
     left: 0%;
     padding: 48px 40px 48px 40px;
     z-index: 1;
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -47,8 +51,12 @@
 
 }
 
-.is-hidden{
-    display: none;
+
+.menu-mobile.is-hidden{
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__list{
@@ -123,3 +131,4 @@
     letter-spacing: 0.02em;
 
 }
+
