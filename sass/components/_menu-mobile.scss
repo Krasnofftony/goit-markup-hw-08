@@ -82,6 +82,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &--current-page{
+        color: $brand-color;
+    }
+
     &:hover, &:focus{
         color: $brand-color;
     }

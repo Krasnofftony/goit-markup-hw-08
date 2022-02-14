@@ -408,6 +408,10 @@ body.menu--open {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu__navigation--current-page {
+  color: #2196f3;
+}
+
 .menu__navigation:hover, .menu__navigation:focus {
   color: #2196f3;
 }
@@ -928,27 +932,22 @@ body.menu--open {
 }
 
 .client-list__item {
-  margin: 0 auto 30px auto;
-}
-
-@media screen and (min-width: 450px) and (max-width: 479px) {
-  .client-list__item {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
+  width: calc(100%/2 - 30px);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .client-list__item {
-    margin-right: 30px;
-    margin-left: 0;
+    width: auto;
   }
-  .client-list__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .client-list__item:nth-child(n+5) {
-    margin-bottom: 0;
-  }
+}
+
+.client-list__item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.client-list__item:nth-child(n+5) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -984,7 +983,6 @@ body.menu--open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   color: #afb1b8;
   background-color: #ffffff;
@@ -998,6 +996,12 @@ body.menu--open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .client-list__logo {
+    width: 210px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1214,12 +1218,6 @@ body.menu--open {
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
-  -webkit-transition-property: background-color color;
-  transition-property: background-color color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover, .filter:focus {
@@ -1227,10 +1225,10 @@ body.menu--open {
   background: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: -webkit-box-shadow background-color;
+  transition-property: -webkit-box-shadow background-color;
+  transition-property: box-shadow background-color;
+  transition-property: box-shadow background-color, -webkit-box-shadow background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1419,20 +1417,22 @@ body.menu--open {
   width: 100%;
   height: 100%;
   top: 0;
-  padding: 63px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
-  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.project-card__link:hover .project__bio,
-.project-card__link:focus .project__bio {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1443,44 +1443,39 @@ body.menu--open {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .project__bio {
+    font-size: 18px;
+  }
+}
+
+.project-card__link:hover .project__bio,
+.project-card__link:focus .project__bio {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
-  padding-top: 93px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition-property: opacity visibility;
   transition-property: opacity visibility;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding-top: 208px;
-    padding-bottom: 207px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .backdrop--hidden {
